@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+group rootProject.group
+version rootProject.version
+
+dependencies {
+    compile 'com.jfoenix:jfoenix:8.0.5'
+    compile project(':hl4a-core')
+}

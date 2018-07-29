@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group rootProject.group
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+uploadArchives {
+
+    artifacts {
+        archives jar
+        archives sourcesJar
+    }
+
+    repositories.mavenDeployer {
+
+        repository url: LocalMaven
+
+    }
+
+}

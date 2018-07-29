@@ -1,0 +1,6 @@
+rootProject.name = 'hl4a-parent'
+include 'hl4a-core'
+include 'hl4a-desktop'
+include 'hl4a-android'
+include 'hl4a-coolq'
+include 'hl4a-script'

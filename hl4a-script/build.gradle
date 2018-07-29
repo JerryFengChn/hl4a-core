@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+group rootProject.group
+version rootProject.version
+
+dependencies {
+    compile project (":hl4a-core")
+}
